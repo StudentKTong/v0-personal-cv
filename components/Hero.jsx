@@ -23,11 +23,11 @@ export default function Hero() {
 
   return (
     <section id="hero" className="min-h-screen pt-24 pb-16 flex items-center relative">
-      {/* Simplified background elements */}
+      {/* Purple background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl floating-element"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl floating-element"></div>
         <div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-600/5 rounded-full blur-3xl floating-element"
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl floating-element"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
@@ -36,21 +36,21 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-on-scroll">
             <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-blue-500/10 text-blue-400 rounded-full text-sm font-medium border border-blue-500/20 mb-4">
+              <span className="inline-block px-4 py-2 bg-purple-500/10 text-purple-400 rounded-full text-sm font-medium border border-purple-500/20 mb-4">
                 👋 Welcome to my portfolio
               </span>
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               <span className="block text-gray-300">Hi, I'm</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
                 Khon Tong
               </span>
             </h1>
 
             <div className="mb-8">
               <p className="text-xl text-gray-400 mb-4">I'm a passionate</p>
-              <div className="text-2xl font-semibold text-blue-400 h-8">
+              <div className="text-2xl font-semibold text-purple-400 h-8">
                 <span className={isTyping ? "typing-effect" : ""}>{roles[currentRole]}</span>
               </div>
             </div>
@@ -83,15 +83,15 @@ export default function Hero() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">2+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">2+</div>
                 <div className="text-sm text-gray-400">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">10+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">10+</div>
                 <div className="text-sm text-gray-400">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400 mb-1">5+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">5+</div>
                 <div className="text-sm text-gray-400">Technologies</div>
               </div>
             </div>
@@ -99,12 +99,12 @@ export default function Hero() {
 
           <div className="relative animate-on-scroll lg:justify-self-end">
             <div className="relative w-full max-w-lg mx-auto">
-              {/* Simplified profile card */}
-              <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-6 rounded-2xl border border-blue-500/20">
+              {/* Purple profile card */}
+              <div className="relative bg-gradient-to-br from-purple-900/50 to-purple-800/50 p-6 rounded-2xl border border-purple-500/20">
                 {/* Profile photo */}
                 <div className="relative mb-6">
                   <div className="w-64 h-64 mx-auto relative">
-                    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-blue-500/30 shadow-xl">
+                    <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-purple-500/30 shadow-xl">
                       <img
                         src="/profile-photo.jpg"
                         alt="Khon Tong - Professional Developer"
@@ -114,12 +114,12 @@ export default function Hero() {
                     </div>
 
                     {/* Status indicator */}
-                    <div className="absolute bottom-2 right-2 w-12 h-12 bg-gradient-to-r from-green-500 to-green-400 rounded-full flex items-center justify-center shadow-lg border-4 border-slate-800">
+                    <div className="absolute bottom-2 right-2 w-12 h-12 bg-gradient-to-r from-green-500 to-green-400 rounded-full flex items-center justify-center shadow-lg border-4 border-purple-900">
                       <div className="w-2 h-2 bg-white rounded-full"></div>
                     </div>
 
                     {/* Verification badge */}
-                    <div className="absolute -top-2 -right-2 w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="absolute -top-2 -right-2 w-10 h-10 bg-gradient-to-r from-purple-600 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
                       <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path
                           fillRule="evenodd"
@@ -134,13 +134,13 @@ export default function Hero() {
                 {/* Profile info */}
                 <div className="text-center">
                   <h2 className="text-2xl font-bold mb-2 text-white">Khon Tong</h2>
-                  <p className="text-blue-400 mb-4 text-lg font-medium">Senior Developer</p>
+                  <p className="text-purple-400 mb-4 text-lg font-medium">Senior Developer</p>
 
                   {/* Social links */}
                   <div className="flex justify-center space-x-3 mb-4">
                     <a
                       href="mailto:Khonthong21@mekong.edu.kh"
-                      className="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-blue-600 transition-colors"
+                      className="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-purple-600 transition-colors"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
@@ -153,7 +153,7 @@ export default function Hero() {
                     </a>
                     <a
                       href="tel:088 814 9829"
-                      className="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-blue-600 transition-colors"
+                      className="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-purple-600 transition-colors"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path
@@ -166,7 +166,7 @@ export default function Hero() {
                     </a>
                     <a
                       href="https://t.me/KhonTong_Dev"
-                      className="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-blue-600 transition-colors"
+                      className="w-10 h-10 rounded-full glass-effect flex items-center justify-center hover:bg-purple-600 transition-colors"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path

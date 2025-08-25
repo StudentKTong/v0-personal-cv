@@ -68,7 +68,7 @@ export default function Skills() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center glass-effect px-6 py-3 rounded-full mb-6">
-            <span className="text-blue-400 text-2xl font-bold mr-3">02</span>
+            <span className="text-purple-400 text-2xl font-bold mr-3">02</span>
             <span className="text-gray-300">Skills & Expertise</span>
           </div>
           <h2 className="section-title text-center">Technical Proficiency</h2>
@@ -88,7 +88,7 @@ export default function Skills() {
               <div className="text-center mb-6">
                 <div className="text-3xl mb-3">{category.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-2">{category.title}</h3>
-                <div className="w-12 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full mx-auto"></div>
+                <div className="w-12 h-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-full mx-auto"></div>
               </div>
 
               <div className="space-y-4">
@@ -98,7 +98,7 @@ export default function Skills() {
                     <div key={skillIndex}>
                       <div className="flex justify-between items-center mb-2">
                         <span className="text-gray-300 font-medium">{skill.name}</span>
-                        <span className="text-blue-400 font-semibold">{skill.level}%</span>
+                        <span className="text-purple-400 font-semibold">{skill.level}%</span>
                       </div>
                       <div
                         ref={(el) => (skillsRef.current[skillId] = el)}
@@ -137,7 +137,7 @@ export default function Skills() {
             ].map((skill, index) => (
               <span
                 key={index}
-                className="glass-effect px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-blue-600/20 transition-all duration-200"
+                className="glass-effect px-4 py-2 rounded-full text-gray-300 hover:text-white hover:bg-purple-600/20 transition-all duration-200"
               >
                 {skill}
               </span>

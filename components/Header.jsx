@@ -13,7 +13,7 @@ export default function Header() {
     const handleScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
-          const sections = ["hero", "experience", "skills", "education", "references"]
+          const sections = ["hero", "experience", "skills", "education", "activities", "references"]
           const scrollPosition = window.scrollY + 100
 
           setScrolled(scrollPosition > 50)
@@ -50,10 +50,10 @@ export default function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="text-xl font-bold text-white flex items-center group cursor-pointer">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-blue-500 rounded-lg flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform duration-300">
+            <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-purple-500 rounded-lg flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform duration-300">
               <span className="text-white font-bold text-sm">K</span>
             </div>
-            <span className="group-hover:text-blue-400 transition-colors">Tong</span>
+            <span className="group-hover:text-purple-400 transition-colors">Tong</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -64,6 +64,7 @@ export default function Header() {
                 { id: "experience", label: "Experience" },
                 { id: "skills", label: "Skills" },
                 { id: "education", label: "Education" },
+                { id: "activities", label: "Activities" },
                 { id: "references", label: "References" },
               ].map((item) => (
                 <li key={item.id}>
@@ -106,6 +107,7 @@ export default function Header() {
                 { id: "experience", label: "Experience" },
                 { id: "skills", label: "Skills" },
                 { id: "education", label: "Education" },
+                { id: "activities", label: "Activities" },
                 { id: "references", label: "References" },
               ].map((item) => (
                 <a
@@ -113,8 +115,8 @@ export default function Header() {
                   href={`#${item.id}`}
                   className={`block py-2 px-3 rounded-lg transition-all duration-200 ${
                     activeSection === item.id
-                      ? "bg-blue-600 text-white"
-                      : "text-gray-300 hover:bg-blue-600/20 hover:text-white"
+                      ? "bg-purple-600 text-white"
+                      : "text-gray-300 hover:bg-purple-600/20 hover:text-white"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
