@@ -50,11 +50,11 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" className="py-20 bg-[#0a0f1a]">
+    <section id="experience" className="py-20 bg-[#0a0612]">
       <div className="container mx-auto px-4">
         {/* Section Header with Step Design */}
         <div className="flex items-center mb-16">
-          <div className="flex items-center bg-gradient-to-r from-blue-600 to-blue-500 rounded-full px-6 py-3 mr-6">
+          <div className="flex items-center bg-gradient-to-r from-purple-600 to-purple-500 rounded-full px-6 py-3 mr-6">
             <span className="text-white text-2xl font-bold mr-3">01</span>
             <div className="w-2 h-2 bg-white rounded-full"></div>
           </div>
@@ -67,18 +67,18 @@ export default function Experience() {
         {/* Timeline Steps */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-blue-400 to-transparent"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-purple-400 to-transparent"></div>
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <div key={index} className="relative animate-on-scroll" style={{ transitionDelay: `${index * 150}ms` }}>
                 {/* Step Number Circle */}
-                <div className="absolute left-0 top-6 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/30 z-10">
+                <div className="absolute left-0 top-6 w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-500 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/30 z-10">
                   <span className="text-white font-bold text-lg">{index + 1}</span>
                 </div>
 
                 {/* Step Content Card */}
-                <div className="ml-24 bg-[#1e293b] rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-900/20 hover:transform hover:scale-[1.02] border border-blue-900/20">
+                <div className="ml-24 bg-[#1a103a] rounded-2xl p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-900/20 hover:transform hover:scale-[1.02] border border-purple-900/20">
                   {/* Status Badge */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center">
@@ -95,7 +95,7 @@ export default function Experience() {
                         <div className="ml-2 w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                       )}
                     </div>
-                    <span className="text-blue-400 font-medium text-sm bg-blue-500/10 px-3 py-1 rounded-full">
+                    <span className="text-purple-400 font-medium text-sm bg-purple-500/10 px-3 py-1 rounded-full">
                       {exp.period}
                     </span>
                   </div>
@@ -104,7 +104,12 @@ export default function Experience() {
                   <div className="mb-4">
                     <h3 className="text-2xl font-bold text-white mb-2 flex items-center">
                       {exp.title}
-                      <svg className="w-5 h-5 text-blue-400 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-5 h-5 text-purple-400 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -114,7 +119,12 @@ export default function Experience() {
                       </svg>
                     </h3>
                     <div className="flex items-center text-gray-300 mb-1">
-                      <svg className="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-4 h-4 text-purple-400 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -125,7 +135,12 @@ export default function Experience() {
                       <span className="font-medium">{exp.company}</span>
                     </div>
                     <div className="flex items-center text-gray-400">
-                      <svg className="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-4 h-4 text-purple-400 mr-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -147,8 +162,8 @@ export default function Experience() {
                   <div className="space-y-3">
                     {exp.description.map((item, i) => (
                       <div key={i} className="flex items-start group">
-                        <div className="flex-shrink-0 w-6 h-6 bg-blue-500/20 rounded-full flex items-center justify-center mr-3 mt-0.5 group-hover:bg-blue-500/30 transition-colors duration-200">
-                          <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                        <div className="flex-shrink-0 w-6 h-6 bg-purple-500/20 rounded-full flex items-center justify-center mr-3 mt-0.5 group-hover:bg-purple-500/30 transition-colors duration-200">
+                          <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
                         </div>
                         <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-200">
                           {item}
@@ -160,7 +175,7 @@ export default function Experience() {
                   {/* Progress Arrow for non-last items */}
                   {index < experiences.length - 1 && (
                     <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
-                      <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                      <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
                         <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path
                             strokeLinecap="round"
@@ -179,7 +194,7 @@ export default function Experience() {
 
           {/* End of Timeline Indicator */}
           <div className="relative mt-12">
-            <div className="absolute left-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/30">
+            <div className="absolute left-0 w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-500 rounded-full flex items-center justify-center shadow-lg shadow-purple-500/30">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
@@ -189,7 +204,7 @@ export default function Experience() {
                 />
               </svg>
             </div>
-            <div className="ml-24 bg-gradient-to-r from-blue-600/10 to-blue-500/10 rounded-2xl p-6 border border-blue-500/20">
+            <div className="ml-24 bg-gradient-to-r from-purple-600/10 to-purple-500/10 rounded-2xl p-6 border border-purple-500/20">
               <h3 className="text-xl font-bold text-white mb-2">Looking Forward</h3>
               <p className="text-gray-400">
                 Ready to take on new challenges and contribute to innovative projects. Open to opportunities that allow
