@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm"
+
 export default function Footer() {
   return (
     <footer id="contact" className="py-12 bg-[#0a061a]">
@@ -87,40 +89,40 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
+
+              <div className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-[#1a103a] flex items-center justify-center mr-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-purple-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-gray-400 text-sm">Location</p>
+                  <span className="text-white">Phnom Penh, Cambodia</span>
+                </div>
+              </div>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-4">Send a Message</h2>
-            <form className="space-y-4">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 bg-[#1a103a] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 bg-[#1a103a] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
-                />
-              </div>
-              <div>
-                <textarea
-                  placeholder="Your Message"
-                  rows="4"
-                  className="w-full px-4 py-3 bg-[#1a103a] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-purple-600 to-purple-500 text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg hover:shadow-purple-500/30 transition-all duration-300 w-full"
-              >
-                Send Message
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
 
